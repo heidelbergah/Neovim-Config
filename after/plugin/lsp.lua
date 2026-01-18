@@ -7,7 +7,6 @@ end)
 
 --require('lspconfig').lua_ls.setup(lsp.nvim_lua_ls())
 --require('lspconfig').pyright.setup(lsp.pyright())
-lspconfig.jedi_language_server.setup{}
 lspconfig.clangd.setup{}
 lspconfig.lua_ls.setup{}
 

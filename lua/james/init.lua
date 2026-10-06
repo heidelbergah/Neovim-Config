@@ -1,5 +1,3 @@
-require("james.remap")
+require("james.remap") -- sets mapleader, so it must load before lazy
 require("james.set")
-
--- local pywal = require('pywal')
--- pywal.setup()
+require("james.lazy")

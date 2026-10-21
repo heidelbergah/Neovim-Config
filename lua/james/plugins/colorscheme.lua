@@ -46,7 +46,7 @@ end
 vim.api.nvim_create_autocmd("ColorScheme", { callback = make_transparent })
 
 function ColorMyPencils(color)
-   color = color or "everforest" -- terafox, gruvbox, everforest
+   color = color or "ashen" -- terafox, gruvbox, everforest, ashen
    vim.cmd.colorscheme(color) -- the autocmd above makes it transparent
 end
 
@@ -68,5 +68,13 @@ return {
    -- e.g. :lua ColorMyPencils("gruvbox")
    { "ellisonleao/gruvbox.nvim", lazy = true },
    { "EdenEast/nightfox.nvim", lazy = true },
+      { "EdenEast/nightfox.nvim", lazy = true },
+   {
+      "ficd0/ashen.nvim",
+      lazy = true,
+      opts = {
+         transparent = true, -- ashen's own transparency, like everforest's
+      },
+   },
 }
 
